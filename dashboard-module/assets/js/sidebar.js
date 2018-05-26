@@ -14,7 +14,7 @@
         "                    <p>Dashboard</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "<li class='alumni-li'>\n" +
+        "<li class='userabm-li'>\n" +
         "                <a href=\"./userabm.html\">\n" +
         "                    <i class=\"now-ui-icons users_single-02\"></i>\n" +
         "                    <p>Alumnos</p>\n" +
