@@ -26,6 +26,17 @@ $(document).ready(function(){
 		join.style.display = "none";
 	});
     
+    $(document).on('tap', '#savechanges', function(){
+        alert('asd')
+		$(this).html("<span class='icon-ok'></span>");
+        $(this).animate({
+            "width":"20%"
+        });
+        $(this).animate({
+            "width":"80%"
+        });
+	});
+    
     $(document).on('tap', '#btn_search', function(){
 		search.style.display = "block";
         appPopup = "SEARCH";

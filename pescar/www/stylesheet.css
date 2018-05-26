@@ -20,6 +20,8 @@ body{
 
 input {
     -webkit-user-select: auto !important;
+    border-radius: 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .appmodule{
@@ -30,6 +32,16 @@ input {
 	left:0;
 	width:100%;
 	opacity:0;
+}
+
+#savechanges, #feedback{
+    width:80%;
+    color:white;
+    text-align: center;
+    margin: 0 auto;
+    padding:10px 25px;
+    border-radius: 25px;
+    background-color: cadetblue;
 }
 
 /* 
@@ -357,6 +369,12 @@ input {
 	height:100px;
 	width:100%;
 	border-bottom:1px solid #EBEBEB;
+}
+
+#profile_container{
+    margin-top:100%;
+    margin:0 auto;
+    text-align: center;
 }
 
 #btn_follow_profile{
