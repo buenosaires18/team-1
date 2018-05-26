@@ -20,6 +20,12 @@
         "                    <p>Alumnos</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
+        "<li class='enterpriseabm-li'>\n" +
+        "                <a href=\"./enterpriseabm.html\">\n" +
+        "                    <i class=\"now-ui-icons business_briefcase-24\"></i>\n" +
+        "                    <p>Empresas</p>\n" +
+        "                </a>\n" +
+        "            </li>\n" +
         "            <li class='reports-li'>\n" +
         "                <a href=\"./reports.html\">\n" +
         "                    <i class=\"now-ui-icons files_paper\"></i>\n" +
