@@ -17,7 +17,7 @@
         "            <li>\n" +
         "                <a href=\"./reports.html\">\n" +
         "                    <i class=\"now-ui-icons files_paper\"></i>\n" +
-        "                    <p>Reportes</p>\n" +
+        "                    <p>Reportes de Centros</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
         "            <li>\n" +
@@ -29,7 +29,7 @@
         "            <li>\n" +
         "                <a href=\"./map.html\">\n" +
         "                    <i class=\"now-ui-icons location_map-big\"></i>\n" +
-        "                    <p>Maps</p>\n" +
+        "                    <p>Mapa</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
         "            <li>\n" +
