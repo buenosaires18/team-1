@@ -20,11 +20,11 @@ $(document).ready(function(){
 	})
   $('#save-student').click(function(){
 			$('.row').last().after(
-														"<div class=\"row\">" +
+														"<div class=\"row\" id="+ $("#exampleInputNombre").val() +">" +
 															"<div class=\"col-md-12\">"  +
 																"<div class=\"card\">" +
 																	"<div class=\"card-header\">" +
-																	"<h4 class=\"card-title\">" + $("#exampleInputNombre").val() + "</h4>" +
+																		"<h4 class=\"card-title\">" + $("#exampleInputNombre").val() + "<button class=\"btn-aux\" id=\"" +  $("#exampleInputNombre").val() + "\" style=\"float: Right\">" + "Borrar"  + "</button>" + "</h4>" +
 																	"</div>" +
 																"</div>" +
 															"</div>"  +
@@ -33,6 +33,11 @@ $(document).ready(function(){
 
     $('#exampleModal').modal('toggle');
 	});
+
+	$('.btn-aux').click(function(){
+		$(this).parent().parent().toggle();
+	})
+
   $('.eliminate').click(function(){
 		$(this).parent().parent().toggle();
 	});
