@@ -36,7 +36,7 @@
             <span class="navbar-toggler-bar bar3"></span>
           </button>
         </div>
-        <!--<a class="navbar-brand" href="">Empresas</a>-->
+        <a class="navbar-brand" href="">Anuncios de trabajo</a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -90,43 +90,24 @@
   </nav>
 
   <!--end navbar-->
-  <div class="panel-header"  style="margin:0%;max-height: 200px;">
-    <div class="header text-center" style="max-height: 42px;">
-      <h2 class="title" style="margin:0%;">Empresas</h2>
-      <!--<p class="category">-->
-      <!--<a target="_blank" href="https://github.com/mouse0270">En tiempo real</a>-->
-      <!--<a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">.</a>-->
-      <!--</p>-->
-    </div>
+  <div class="panel-header panel-header-sm">
   </div>
 
   <div class="content">
-    <button class="btn btn-primary btn-round" style="margin-top:5%;" data-toggle="modal" data-target="#exampleModal">Añadir empresa</button>
+    <button class="btn btn-primary btn-round" style="margin-top:5%;" data-toggle="modal" data-target="#exampleModal">Añadir trabajo</button>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Empresa</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Nuevo Trabajo</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label for="exampleInputNombre">Centro</label>
-              <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="J.P. MORGAN">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPais">País</label>
-              <input type="text" class="form-control" id="exampleInputPais" placeholder="Argentina">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputCentro">Centro</label>
-              <input type="text" class="form-control" id="exampleInputCentro" placeholder="CENTRO NUEVO">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputContacto">Contacto</label>
-              <input type="text" class="form-control" id="exampleInputContacto" placeholder="empresa@mail.com">
+              <label for="exampleInputNombre">Puesto trabajo</label>
+              <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="Juan Milo Díaz">
             </div>
             <!--
             <div class="form-check">
@@ -141,7 +122,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" id="save-enterprise">Guardar</button>
+            <button type="button" class="btn btn-primary" id="save-student">Guardar</button>
           </div>
         </div>
       </div>
@@ -150,135 +131,9 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-title">Empresas</h4>
+            <h4 class="card-title">Arreglar computadoras</h4>
           </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table">
-                <thead class=" text-primary">
-                  <th>
-                    Empresa
-                  </th>
-                  <th>
-                    País
-                  </th>
-                  <th>
-                    Centro
-                  </th>
-                  <th>
-                    Contacto
-                  </th>
-                  <th>
-                    Alumnos activos
-                  </th>
-                  <th>
-
-                  </th>
-                </thead>
-                <tbody id="enterprise-id">
-                  <tr>
-                    <td>
-                      SAMSUNG
-                    </td>
-                    <td>
-                      Argentina
-                    </td>
-                    <td>
-                      SAMSUNG PREXEY
-                    </td>
-                    <td>
-                      samsung@contacto.com
-                    </td>
-                    <td>
-                      20
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary btn-round eliminate-enterprise">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      TOYOTA
-                    </td>
-                    <td>
-                      Argentina
-                    </td>
-                    <td>
-                      TOYOTA ZÁRATE
-                    </td>
-                    <td>
-                      toyota@contacto.com
-                    </td>
-                    <td>
-                      18
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary btn-round eliminate-enterprise">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      VOLVO
-                    </td>
-                    <td>
-                      Argentina
-                    </td>
-                    <td>
-                      VOLVO
-                    </td>
-                    <td>
-                      volvo@contacto.com
-                    </td>
-                    <td>
-                      19
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary btn-round eliminate-enterprise">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      SANTANDER RÍO
-                    </td>
-                    <td>
-                      Argentina
-                    </td>
-                    <td>
-                      SANTANDER RÍO
-                    </td>
-                    <td>
-                      santander@río.com
-                    </td>
-                    <td>
-                      15
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary btn-round eliminate-enterprise">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      COCA-COLA
-                    </td>
-                    <td>
-                      Argentina
-                    </td>
-                    <td>
-                      CENTRO VILLAGE COCA-COLA
-                    </td>
-                    <td>
-                      coca@contact.com
-                    </td>
-                    <td>
-                      20
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary btn-round eliminate-enterprise">Eliminar</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="card-body year-click-open"   id="2018" style="display:none;">
           </div>
         </div>
       </div>
@@ -303,9 +158,8 @@
   <script src="../assets/demo/demo.js"></script>
   <script src="../assets/js/sidebar.js"></script>
   <script src="../assets/js/usersabm.js"></script>
-  <script src="../assets/js/enterpriseabm.js"></script>
   <script>
-      setActive('enterpriseabm');
+      setActive('anunciosTrabajos');
       $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       demo.initDashboardPageCharts();
