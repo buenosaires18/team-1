@@ -24,23 +24,23 @@ $(document).ready(function(){
      ",\"trabaja\":\""+$("#exampleInputWorking").val()+"\"}]";
     localStorage.setItem("user",aux);
     $('#exampleModal').modal('toggle');
-      location.reload(); 
+      location.reload();
 
 
 	});
   if (localStorage.getItem("user") === null) {
-  var user = [{"name":'Jhon',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"Sí"},
-  {"name":'Jhon',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"No"},
-  {"name":'Jhon',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"No"},
-  {"name":'Facundo',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"Sí"},
-  {"name":'Facundo',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"No"},
-  {"name":'Facundo',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"No"},
-  {"name":'Martin',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"Sí"},
-  {"name":'martin',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"No"},
-  {"name":'martin',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"No"},
+  var user = [{"name":'Jhonathan',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"No"},
+  {"name":'Martin',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Lorant',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"No"},
+  {"name":'Juan',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Matias',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Nicolas',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Alejandro',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Guido',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Agustin',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"No"},
   {"name":'Matias',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2018","mail":"mail@mail.com","trabaja":"Sí"},
-  {"name":'Matias',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"No"},
-  {"name":'Matias',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"No"}
+  {"name":'Matias',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2017","mail":"mail@mail.com","trabaja":"Sí"},
+  {"name":'Matias',"pais":"Argentina","Provincia":'Buenos Aires', "año":"2016","mail":"mail@mail.com","trabaja":"Sí"}
   ];
   localStorage.setItem("user",JSON.stringify(user));
 }

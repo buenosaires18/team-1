@@ -41,7 +41,7 @@
         "            <li class='notifications-li'>\n" +
         "                <a href=\"./notifications.html\">\n" +
         "                    <i class=\"now-ui-icons ui-1_bell-53\"></i>\n" +
-        "                    <p>Notificationes</p>\n" +
+        "                    <p>Notificaciones</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
         "        </ul>\n" +
