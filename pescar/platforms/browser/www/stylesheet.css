@@ -15,7 +15,6 @@
 }
 
 body{
-	overflow:hidden;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
@@ -47,11 +46,13 @@ input {
 	height:100%;
 	background-color:black;
 	overflow:hidden;
-	z-index:9999;	
+	z-index:999999;	
 }
 
 #logo{
 	margin-top:5%;	
+    height:20%;
+    width:80%;
 }
 
 #bg_slasher_video{ 
@@ -115,4 +116,406 @@ input {
 
 #txt_password{
 	padding-right:30%;	
+}
+
+/* 
+
+================= NAV_DOWN ================= 
+
+*/
+
+#nav_down{
+	position:fixed;
+	bottom:-4px;
+	left:0;
+	width:100%;
+	height:9%;
+	background-color:white;
+    box-shadow:-3px 0 3px rgba(0, 0, 0, 0.3);
+    z-index:999998;
+}
+
+.btn_navdown{
+	position:absolute;
+	display:table;
+	width:33%;
+	height:100%;
+	color:lightgray;  
+	font-size:180%;
+	text-align:center;
+}
+
+.navdown_icon{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#navdown_photo{
+	border-radius:360px;
+    width:100%;
+    height:100%;
+}
+
+#btn_search{
+	float:left;
+	background-color:white;
+	color:#E94E1B;
+}
+
+#btn_feed{
+	left:33%;
+}
+
+#btn_profile{
+	left:66%;
+}
+
+/* 
+
+================= SEARCH ================= 
+
+*/
+
+#search{
+	display:none;
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background: rgb(78,78,78);
+	/*background: -moz-linear-gradient(45deg,  rgba(78,78,78,1) 0%, rgba(9,9,9,1) 99%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(78,78,78,1)), color-stop(99%,rgba(9,9,9,1)));
+	background: -webkit-linear-gradient(45deg,  rgba(78,78,78,1) 0%,rgba(9,9,9,1) 99%);
+	background: -o-linear-gradient(45deg,  rgba(78,78,78,1) 0%,rgba(9,9,9,1) 99%);
+	background: -ms-linear-gradient(45deg,  rgba(78,78,78,1) 0%,rgba(9,9,9,1) 99%);*/
+	background: linear-gradient(45deg,  rgba(78,78,78,1) 0%,rgba(9,9,9,1) 99%);
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#090909',GradientType=1 );*/
+	opacity:0.97;
+    z-index:9999999;
+}
+
+#s_search{
+	position:fixed;
+	padding-top:4.5%;
+	padding-left:2.5%;
+	left:12%;
+	color:white;
+	font-size:180%;	
+}
+
+#txt_search{
+	position:fixed;
+	top:0;
+	left:12%;
+	width:100%;
+	padding:6% 18%;
+	background-color:transparent;
+	color:white;
+	font-size:120%;
+	border:none;
+}
+
+#s_close{
+	position:fixed;
+	padding-left:0.5%;
+	left:0;
+	color:white;
+    font-size:200%;
+    padding-top:0.4em;
+}
+
+#search_results{
+	position:absolute;
+	top:10%;
+	left:0;
+	width:100%;	
+}
+
+#search_main{
+	position:absolute;
+	text-align:center;
+	color:white;
+	width:90%;
+	margin:20% 5%;
+}
+
+#search_main .icon-search-7{
+	font-weight:bold;
+	font-size:500%;	
+}
+
+#search_text{
+	font-weight:100;
+	font-size:140%;
+}
+
+/* 
+
+================= FEED ================= 
+
+*/
+
+.feed_post{
+    border-bottom:1px solid #e7ebee;
+}
+
+.feed_user{
+	height:70px;	
+	position:relative;
+    background-color:white;
+}
+
+.feed_userimg{
+	float:left;
+	position:relative;
+	border-radius:360px; 
+	width:48px; 
+	height:48px;
+	margin-left:2%;
+    margin-top:3%;
+}
+
+.feed_usertext{
+    float:left;
+	position:relative;
+    margin-left:3%;
+	margin-top:4.85%;
+    color:#212121;
+}
+
+.feed_username{
+	font-size:100%;
+    font-weight:500;
+}
+
+.feed_time{
+	font-size:90%;
+    font-weight:400;
+    color:#c1c1c1;
+    margin-left:12px;
+}
+
+.feed_details{
+	font-size:75%;
+    font-weight:400;
+}
+
+.feed_btn{
+    margin-top:5%;
+    float:right;
+    margin-right:4%;
+}
+
+.feed_photo{
+    display:none;
+    height:250px;
+    width:100%;
+    background-image:url(img/event1.jpg);
+    background-size:cover; /*100%*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:white;
+}
+
+.feed_text{
+    background-color:white;
+    padding:1% 2% 0 3%;
+    font-weight:200;
+    font-size:130%;
+}
+
+.feed_stats{
+	padding:3% 2% 0 2%;
+    background-color:white;
+    font-size:110%;
+}
+
+.feed_comments{
+    padding:3%;
+    background-color:white;
+    font-size:90%;
+}
+
+/* 
+
+================= PROFILE ================= 
+
+*/
+
+#portada{
+	position:absolute;
+	top:0;
+	left:0;
+	background-size:100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:100px;
+	width:100%;
+	border-bottom:1px solid #EBEBEB;
+}
+
+#btn_follow_profile{
+    clear:both;
+	float:left;
+	margin-top:-7%;
+    margin-left:3.2%;
+}
+
+#btn_chat_profile{
+    clear:both;
+	float:left;
+	margin-top:-10.65%;
+    margin-left:17.7%;
+}
+
+#btn_edit_profile{
+    clear:both;
+	float:left;
+	margin-top:-12%;
+    margin-left:3.2%;
+}
+
+.btn_follow, .btn_edit, .btn_chatu, .btn_notif_comment, .btn_shop{
+	font-size:140%;
+	background-color:white;
+    color:#212121;
+    border:1px solid #212121;
+    padding:5px 7px;
+    border-radius:12px;
+}
+
+.btn_unfollow{
+    font-size:140%;
+	background-color:#E94E1B;
+    color:white;
+    border:1px solid #E94E1B;
+    padding:5px 7px;
+    border-radius:12px;
+    text-align:center;
+}
+
+#pp_stats{
+	position:relative;
+	float:right;
+	right:1%;
+	margin-top:12.5%;
+	background-color:rgba(0, 0 ,0, 0.6);
+	width:52%;
+	text-align:center;
+	border-radius:10px;
+}
+
+.s_stat{
+	display:inline-block;
+	padding:5.5% 0 3% 0;
+	height:100%;
+	width:30%;
+	text-align:center;
+	color:white;
+	text-shadow:0 0 2px black;
+	line-height:82%;
+}
+
+.s_stat_text{
+	font-size:55%;
+}
+
+#influence{
+	font-weight:bold;
+	font-size:110%;
+}
+
+#followers{
+	font-weight:bold;
+	font-size:110%;
+}
+
+#followed{
+	font-weight:bold;
+	font-size:110%;
+}
+
+/*#e_stats{
+	position:relative;
+	float:right;
+	right:0;
+    margin-top:5%;
+    margin-bottom:3%;
+	background-color:white;
+	width:100%;
+	text-align:center;
+    line-height:100%;
+}
+
+.e_stat{
+	display:inline-block;
+	width:49%;
+	text-align:center;
+	color:#212121;
+}
+
+.e_stat_text{
+	font-size:60%;
+    font-weight:300;
+}
+
+#e_assisted{
+	font-weight:bold;
+	font-size:150%;
+}
+
+#e_liked{
+	font-weight:bold;
+	font-size:150%;
+}*/
+
+#p_picture{
+	position:relative;
+	float:left;
+	left:3.2%;
+	margin-top:13%;
+	height:100px;
+	width:100px;
+	border:1px solid white;
+	border-radius:360px;
+}
+
+#pp_username{
+	float:left;
+	margin-left:7%;
+	margin-top:5%;
+	font-weight:bold;
+	font-size:110%;
+}
+
+.u_stats{
+	clear:both;
+	float:left;
+	margin-left:34.5%;
+	margin-top:-3%;
+	font-size:74%;
+}
+
+#p_views{
+	clear:both;
+	margin-top:1%;
+}
+
+#p_interests{
+	clear:both;
+	margin-top:1.2%;
+}
+
+#p_description{
+	margin-top:63%;
+	width:100%;
+	padding-left:3.2%;
+	padding-bottom:3%;
+	line-height:125%;
+}
+
+#btn_p_events{
+    color:white;
+	background-color:black;
 }
