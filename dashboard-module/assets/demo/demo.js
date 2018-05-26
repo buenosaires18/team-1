@@ -1,3 +1,11 @@
+function  setActive(page){
+  $('.dashboard-li').removeClass('active');
+  $('.reports-li').removeClass('active');
+  $('.map-li').removeClass('active');
+  $('.notifications-li').removeClass('active');
+    $('.'+page+'-li').addClass('active');
+}
+
 demo = {
   initPickColor: function() {
     $('.pick-class-label').click(function() {

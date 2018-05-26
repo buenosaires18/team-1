@@ -176,17 +176,38 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-8">
             <div class="card">
               <div class="card-header">
                 <h5 class="card-category">Contenido</h5>
-                <h4 class="card-title">Contenido</h4>
+                <h4 class="card-title">Agregar contenido</h4>
               </div>
               <div class="card-body">
 
               </div>
-              </div>
+            </div>
           </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-category">Contenido</h5>
+                <h4 class="card-title">Novedades</h4>
+              </div>
+              <div class="card-body">
+                <div class="alert alert-info " data-notify="container">
+                  <span data-notify="message">Nueva oferta de Volvo</span>
+                </div>
+                <div class="alert alert-info " data-notify="container">
+                  <span data-notify="message">Nueva oferta de Volvo</span>
+                </div>
+                <div class="alert alert-info " data-notify="container">
+                  <span data-notify="message">Nueva oferta de Volvo</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <footer class="footer">
@@ -239,9 +260,11 @@
   <script src="../assets/demo/demo.js"></script>
   <script src="../assets/js/sidebar.js"></script>
   <script>
+    setActive('dashboard');
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
-      demo.initDashboardPageCharts();
+
+        demo.initDashboardPageCharts();
 
     });
   </script>
