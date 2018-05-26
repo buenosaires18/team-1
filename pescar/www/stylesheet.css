@@ -24,6 +24,10 @@ input {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
+.tap_text{
+	font-weight:700;
+}
+
 .appmodule{
 	position:absolute;
 	top:8%;
@@ -34,7 +38,16 @@ input {
 	opacity:0;
 }
 
-#savechanges, #feedback{
+#btnApply{
+    padding:10px 25px; 
+    margin:0 auto; 
+    margin-bottom:3px; 
+    background-color:cornflowerblue; 
+    color:white; 
+    font-weight: bold;
+}
+
+#savechanges, #feedback,#editprofile,#submitform{
     width:80%;
     color:white;
     text-align: center;
@@ -171,11 +184,11 @@ input {
 #btn_search{
 	float:left;
 	background-color:white;
-	color:#E94E1B;
 }
 
 #btn_feed{
 	left:25%;
+    color:#E94E1B;
 }
 
 #btn_notif{
@@ -372,7 +385,7 @@ input {
 }
 
 #profile_container{
-    margin-top:100%;
+    margin-top:80%;
     margin:0 auto;
     text-align: center;
 }
@@ -405,6 +418,7 @@ input {
     border:1px solid #212121;
     padding:5px 7px;
     border-radius:12px;
+    margin-top:2%;
 }
 
 .btn_unfollow{
@@ -551,6 +565,7 @@ input {
 #nav_up{
 	position:fixed;
     display:table;
+    visibility: hidden;
 	top:0%;
 	left:0%;
 	width:100%;

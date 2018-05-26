@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="feed_photo"></div>
-            <div class="feed_text">Increíble oportunidad de desarrollo y carrera en el hub tecnológico de Buenos Aires como Technical Leader en J.P.Morgan.<br/><br/><span style="padding:10px 25px; margin:0 auto; background-color:cornflowerblue; color:white; font-weight: bold;">Aplicar con tu CV</span></div>
+            <div class="feed_text">Increíble oportunidad de desarrollo y carrera en el hub tecnológico de Buenos Aires como Technical Leader en J.P.Morgan.<br/><br/><span id="btnApply">Aplicar con tu CV</span></div>
             <div class="feed_stats">
                 <span class="icon-heart-empty s_text feed_like">101,564</span>
                 <span class="icon-comment-empty s_text feed_comment">3231</span>
@@ -123,7 +123,7 @@
             <div class="feed_photo" style="display:block; background-image: url(img/event2.jpg);"></div>
             <div class="feed_text" style="display:none;"></div>
             <div class="feed_stats">
-                <span class="icon-heart-empty s_text feed_like">866,421</span>
+                <span class="icon-heart-empty s_text feed_like">18,231</span>
                 <span class="icon-comment-empty s_text feed_comment">952</span>
             </div>
             <div class="feed_comments">
@@ -158,14 +158,30 @@
         <div id="profile_content">
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <center>
-            <h3>Puesto actual: </h3><input type="text" id="puestoactual"/><br/><br/>
-            <h3>Salario: </h3><input type="number" id="salarioactual"/><br/><br/>
+                <div id="editprofile">Actualizar datos</div>
+                <br/>
+                <div id="editPr" style="display:none;">
+            <h4>Última actualización: <input type="text"/></h4><br/><br/>
+            <h3>Puesto actual: <input type="text"/></h3><br/><br/>
+            <h3>Salario: <input type="text"/></h3><br/>
+            <h3>Nivel: 10, maestro pescador </h3><br/>
+            <h3>En blanco: <input type="text"/></h3><br/>
+            <h3>Con quién vivís: <input type="text"/></h3><br/>
+            <h3>Trato del empleador: <input type="text"/></h3><br/>
+            <h3>Información adicional: <input type="text"/></h3><br/>
+                    </div>
+                <div id="noeditPr">
+            <h6>Última actualización: 3 meses</h6><br/><br/>
+            <h3>Puesto actual: Technical Leader</h3><br/><br/>
+            <h3>Salario: $75k</h3><br/>
             <h3>Nivel: 10, maestro pescador </h3><br/>
             <h3>En blanco: Sí</h3><br/>
-            <h3>Con quién vivís: </h3><input type="text" id="conquienvivis"/><br/>
-            <h3>Trato del empleador: </h3><input type="text" id="tratoempleador"/><br/>
-            <h3>Información adicional: </h3><input type="text" id="masinfo"/><br/>
+            <h3>Con quién vivís: Solo</h3><br/>
+            <h3>Trato del empleador: Excelente</h3><br/>
+            <h3>Información adicional: Dispuesto a ayudar y mentorear a pescadores</h3><br/>
+                    </div>
                 <br/><br/>
+                    
             <div id="savechanges">Guardar cambios</div>
             <br/>
             <div id="feedback">Feedback sobre Pescar (+100 puntos)</div>
@@ -208,6 +224,21 @@
         <br/>
         <div id="copyright">Pescar © 2018<br/><span id="version">v0.1 ALPHA</span></div>
         <br/>
+    </div>
+    <div id="feedbacksec" class="appmodule">
+        <center>
+        <br/><br/><br/>
+        <p>¿Qué te pareció el programa?</p><br/>
+        <textarea></textarea><br/>
+        <p>¿Qué mejorarías?</p><br/>
+        <textarea></textarea><br/>
+        <p>¿Qué fue lo peor?</p><br/>
+        <textarea></textarea><br/>
+        <p>¿Qué te impactó más?</p><br/>
+        <textarea></textarea><br/><br/>
+        <div id="submitform">Enviar</div>
+        <br/><br/><br/>
+        </center>
     </div>
     <div id="notif" class="appmodule">
         <div class="n_notif">

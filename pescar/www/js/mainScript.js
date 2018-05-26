@@ -13,6 +13,7 @@ $(document).ready(function(){
     var profile = document.getElementById('profile');
     var search = document.getElementById('search');
     var chat = document.getElementById("chat");
+    var feedback = document.getElementById("feedbacksec");
     var userlist = document.getElementById("userlist");
     var chatview = document.getElementById("chatview");
     var nav_down = document.getElementById("nav_down");
@@ -24,16 +25,48 @@ $(document).ready(function(){
 	
 	$(document).on('tap', '#logo', function(){
 		join.style.display = "none";
+        $('#nav_up').show();
 	});
     
-    $(document).on('tap', '#savechanges', function(){
-        alert('asd')
+    $(document).on('tap', '#savechanges, #submitform', function(){
 		$(this).html("<span class='icon-ok'></span>");
         $(this).animate({
             "width":"20%"
         });
         $(this).animate({
-            "width":"80%"
+            "width":"80%",
+            "background-color": "lightgreen"
+        });
+	});
+    
+    $(document).on('tap', '#btnLogin', function(){
+		$(this).html("<span class='icon-ok'></span>");
+        $(this).animate({
+            "width":"10%"
+        });
+        $(this).animate({
+            "width":"90%",
+            "border-radius": "360px"
+        });
+        $(this).html("<span class='icon-ok'></span>");
+        setTimeout(function(){
+            join.style.display = "none";
+            $('#nav_up').css('visibility', 'visible');
+        }, 1500);
+	});
+    
+    $(document).on('tap', '#editprofile', function(){
+		$('#editPr').toggle();
+        $('#noeditPr').toggle();
+	});
+    
+    $(document).on('tap', '#btnApply', function(){
+		$(this).html("<span class='icon-ok'></span>");
+        $(this).animate({
+            "padding":"10px 300px"
+        });
+        $(this).animate({
+            "padding":"10px 25px"
         });
 	});
     
@@ -60,6 +93,10 @@ $(document).ready(function(){
     
     $(document).on('tap', '#btn_more', function(){
 		changeAppModule('MORE', this);
+	});
+    
+    $(document).on('tap', '#feedback', function(){
+		changeAppModule('FEEDBACK', this);
 	});
     
     $(document).on('tap', '#btn_chat', function(){
@@ -158,6 +195,7 @@ $(document).ready(function(){
                 profile.style.opacity = 0;
                 notif.style.opacity =0;
                 more.style.opacity =0;
+                feedback.style.opacity =0;
 				Nav_Click(e);
 				break;
 			}
@@ -167,6 +205,7 @@ $(document).ready(function(){
                 profile.style.opacity = 1;
                 notif.style.opacity =0;
                 more.style.opacity =0;
+                feedback.style.opacity =0;
 				Nav_Click(e);
 				break;	
 			}
@@ -176,6 +215,7 @@ $(document).ready(function(){
                 profile.style.opacity = 0;
                 notif.style.opacity =1;
                 more.style.opacity =0;
+                feedback.style.opacity =0;
 				Nav_Click(e);
 				break;	
 			}
@@ -185,6 +225,17 @@ $(document).ready(function(){
                 profile.style.opacity = 0;
                 notif.style.opacity =0;
                 more.style.opacity =1;
+                feedback.style.opacity =0;
+				Nav_Click(e);
+				break;	
+			}
+            case 'FEEDBACK':
+			{
+				feed.style.opacity = 0;
+                profile.style.opacity = 0;
+                notif.style.opacity =0;
+                more.style.opacity =0;
+                feedback.style.opacity =1;
 				Nav_Click(e);
 				break;	
 			}
