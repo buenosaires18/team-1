@@ -14,10 +14,16 @@
         "                    <p>Dashboard</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "<li class='alumni-li'>\n" +
+        "<li class='userabm-li'>\n" +
         "                <a href=\"./userabm.html\">\n" +
         "                    <i class=\"now-ui-icons users_single-02\"></i>\n" +
         "                    <p>Alumnos</p>\n" +
+        "                </a>\n" +
+        "            </li>\n" +
+        "<li class='enterpriseabm-li'>\n" +
+        "                <a href=\"./enterpriseabm.html\">\n" +
+        "                    <i class=\"now-ui-icons business_briefcase-24\"></i>\n" +
+        "                    <p>Empresas</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
         "            <li class='reports-li'>\n" +
@@ -26,19 +32,7 @@
         "                    <p>Reportes</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./userabm.html\">\n" +
-        "                    <i class=\"now-ui-icons users_single-02\"></i>\n" +
-        "                    <p>Alumnos</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./icons.html\">\n" +
-        "                    <i class=\"now-ui-icons education_atom\"></i>\n" +
-        "                    <p>Icons</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li class='map-li'>\n" +
+            "            <li class='map-li'>\n" +
         "                <a href=\"./map.html\">\n" +
         "                    <i class=\"now-ui-icons location_map-big\"></i>\n" +
         "                    <p>Mapa</p>\n" +
@@ -47,7 +41,7 @@
         "            <li class='notifications-li'>\n" +
         "                <a href=\"./notifications.html\">\n" +
         "                    <i class=\"now-ui-icons ui-1_bell-53\"></i>\n" +
-        "                    <p>Notifications</p>\n" +
+        "                    <p>Notificationes</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
         "        </ul>\n" +
