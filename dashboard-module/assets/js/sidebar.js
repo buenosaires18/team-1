@@ -8,13 +8,19 @@
         "    </div>\n" +
         "    <div class=\"sidebar-wrapper\">\n" +
         "        <ul class=\"nav\">\n" +
-        "            <li class=\"active \">\n" +
+        "            <li class='dashboard-li'>\n" +
         "                <a href=\"./dashboard.html\">\n" +
         "                    <i class=\"now-ui-icons design_app\"></i>\n" +
         "                    <p>Dashboard</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "            <li>\n" +
+        "<li class='alumni-li'>\n" +
+        "                <a href=\"./userabm.html\">\n" +
+        "                    <i class=\"now-ui-icons users_single-02\"></i>\n" +
+        "                    <p>Alumnos</p>\n" +
+        "                </a>\n" +
+        "            </li>\n" +
+        "            <li class='reports-li'>\n" +
         "                <a href=\"./reports.html\">\n" +
         "                    <i class=\"now-ui-icons files_paper\"></i>\n" +
         "                    <p>Reportes</p>\n" +
@@ -32,13 +38,13 @@
         "                    <p>Icons</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "            <li>\n" +
+        "            <li class='map-li'>\n" +
         "                <a href=\"./map.html\">\n" +
         "                    <i class=\"now-ui-icons location_map-big\"></i>\n" +
         "                    <p>Mapa</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "            <li>\n" +
+        "            <li class='notifications-li'>\n" +
         "                <a href=\"./notifications.html\">\n" +
         "                    <i class=\"now-ui-icons ui-1_bell-53\"></i>\n" +
         "                    <p>Notifications</p>\n" +
