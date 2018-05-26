@@ -15,6 +15,12 @@
         "                </a>\n" +
         "            </li>\n" +
         "            <li>\n" +
+        "                <a href=\"./reports.html\">\n" +
+        "                    <i class=\"now-ui-icons files_paper\"></i>\n" +
+        "                    <p>Reportes</p>\n" +
+        "                </a>\n" +
+        "            </li>\n" +
+        "            <li>\n" +
         "                <a href=\"./icons.html\">\n" +
         "                    <i class=\"now-ui-icons education_atom\"></i>\n" +
         "                    <p>Icons</p>\n" +
@@ -59,4 +65,3 @@
         "        </ul>\n" +
         "    </div>\n" +
         "</div>\n");
-
