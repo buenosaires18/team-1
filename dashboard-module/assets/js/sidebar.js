@@ -21,12 +21,6 @@
         "                </a>\n" +
         "            </li>\n" +
         "            <li>\n" +
-        "                <a href=\"./icons.html\">\n" +
-        "                    <i class=\"now-ui-icons education_atom\"></i>\n" +
-        "                    <p>Icons</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li>\n" +
         "                <a href=\"./map.html\">\n" +
         "                    <i class=\"now-ui-icons location_map-big\"></i>\n" +
         "                    <p>Mapa</p>\n" +
@@ -36,30 +30,6 @@
         "                <a href=\"./notifications.html\">\n" +
         "                    <i class=\"now-ui-icons ui-1_bell-53\"></i>\n" +
         "                    <p>Notifications</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./user.html\">\n" +
-        "                    <i class=\"now-ui-icons users_single-02\"></i>\n" +
-        "                    <p>User Profile</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./tables.html\">\n" +
-        "                    <i class=\"now-ui-icons design_bullet-list-67\"></i>\n" +
-        "                    <p>Table List</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./typography.html\">\n" +
-        "                    <i class=\"now-ui-icons text_caps-small\"></i>\n" +
-        "                    <p>Typography</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li class=\"active-pro\">\n" +
-        "                <a href=\"./upgrade.html\">\n" +
-        "                    <i class=\"now-ui-icons arrows-1_cloud-download-93\"></i>\n" +
-        "                    <p>Upgrade to PRO</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
         "        </ul>\n" +
