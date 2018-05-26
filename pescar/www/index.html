@@ -6,8 +6,8 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-	<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-    <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fontello.min.css" rel="stylesheet" type="text/css"/>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="application/javascript" src="js/fastclick.js"></script>
 	<script type="text/javascript" src="js/mainScript.js"></script>
@@ -20,7 +20,7 @@
         </video>
         <center>
         <div id="initial">
-            <img id="logo" src="img/logo.png" height="267" width="502"/>
+            <img id="logo" src="img/logo.png"/>
             <div id="joinForm">
                 <input type="text" id="txt_email" placeholder="DNI"/>
                 <input type="password" id="txt_password" placeholder="Contraseña"/>
@@ -30,8 +30,312 @@
         </div>
         </center>
     </div>
-    <div id="index" class="appmodule" style="opacity:1;">
-        
+    <div id="feed" class="appmodule">
+        <div class="feed_post">
+            <div class="feed_user">
+                <img class="feed_userimg" src="img/borja.jpg" />
+                <div class="feed_usertext">
+                    <span class="feed_username">Borja Martel</span>
+                    <span class="feed_time">30 seg</span>
+                    <div class="feed_details">en <span class="event_link tap_text">Refugio Patagonia</span> by <span class="profile_link tap_text">Cerveza Patagonia</span></div>
+                </div>
+            </div>
+            <div class="feed_photo"></div>
+            <div class="feed_text">Who want to go and grab an ice cold beer?</div>
+            <div class="feed_stats">
+                <span class="icon-heart-empty s_text feed_like">18,231</span>
+                <span class="icon-comment-empty s_text feed_comment">256</span>
+            </div>
+            <div class="feed_comments">
+                <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+            </div>
+        </div>
+        <div class="feed_post">
+            <div class="feed_user">
+                <img class="feed_userimg" src="img/nico.jpg" />
+                <div class="feed_usertext">
+                    <span class="feed_username">Nicolas Benenzon</span>
+                    <span class="feed_time">41 min</span>
+                    <div class="feed_details">en <span class="event_link tap_text">Refugio Patagonia</span> by <span class="profile_link tap_text">Cerveza Patagonia</span></div>
+                </div>
+            </div>
+            <div class="feed_photo" style="display:block;"></div>
+            <div class="feed_text" style="display:none;">Who want to go and grab an ice cold beer?</div>
+            <div class="feed_stats">
+                <span class="icon-heart-empty s_text feed_like">18,231</span>
+                <span class="icon-comment-empty s_text feed_comment">256</span>
+            </div>
+            <div class="feed_comments">
+                <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+            </div>
+        </div>
+        <div class="feed_post">
+            <div class="feed_user">
+                <img class="feed_userimg" src="img/nico.jpg" />
+                <div class="feed_usertext">
+                    <span class="feed_username">Nicolas Benenzon</span>
+                    <span class="feed_time">4 h</span>
+                    <div class="feed_details">asistirá a</div>
+                </div>
+            </div>
+            <div class="p_content" style="background-image:url(img/jet_e.jpg);">
+                <div class="btn_p_like icon-heart-empty"></div>
+                <div class="p_info">
+                    <span class="p_text eventTitle">This Thursday We Are Lucky</span>
+                    <br/>
+                    <span class="icon-calendar p_text"> jueves, 14 julio 22:00 a 4:00</span>
+                    <br/>
+                    <span class="icon-location-6 location_link p_text">Av. Rafael Obligado Costanera 4801</span>
+                </div>
+            </div>
+            <div class="feed_stats">
+                <span class="icon-heart-empty s_text feed_like">18,231</span>
+                <span class="icon-comment-empty s_text feed_comment">256</span>
+            </div>
+            <div class="feed_comments">
+                <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+            </div>
+        </div>
+        <div class="feed_post">
+            <div class="feed_user">
+                <img class="feed_userimg" src="img/borja.jpg" />
+                <div class="feed_usertext">
+                    <span class="feed_username">Borja Martel</span>
+                    <span class="feed_time">4 h</span>
+                    <div class="feed_details">asistirá a</div>
+                </div>
+            </div>
+            <div class="p_content" style="background-image:url(img/eventpata.jpg);">
+                <div class="btn_p_like icon-heart-empty"></div>
+                <div class="p_info">
+                    <span class="p_text eventTitle">PICURBA Picnic Urbano</span>
+                    <br/>
+                    <span class="icon-calendar p_text"> jueves, 21 abril 18:00 a 0:00</span>
+                    <br/>
+                    <span class="icon-location-6 location_link p_text">Av. Centenario y Guemes</span>
+                </div>
+            </div>
+            <div class="feed_stats">
+                <span class="icon-heart-empty s_text feed_like">18,231</span>
+                <span class="icon-comment-empty s_text feed_comment">256</span>
+            </div>
+            <div class="feed_comments">
+                <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+            </div>
+        </div>
+        <div class="feed_post">
+            <div class="feed_user">
+                <img class="feed_userimg" src="img/taba.jpg" />
+                <div class="feed_usertext">
+                    <span class="feed_username">Ivan Tabachnik</span>
+                    <span class="feed_time">1 d</span>
+                    <div class="feed_details">le interesa</div>
+                </div>
+            </div>
+            <div class="p_content" style="background-image:url(img/jet_e.jpg);">
+                <div class="btn_p_like icon-heart-empty"></div>
+                <div class="p_info">
+                    <span class="p_text eventTitle">This Thursday We Are Lucky</span>
+                    <br/>
+                    <span class="icon-calendar p_text"> jueves, 14 julio 22:00 a 4:00</span>
+                    <br/>
+                    <span class="icon-location-6 location_link p_text">Av. Rafael Obligado Costanera 4801</span>
+                </div>
+            </div>
+            <div class="feed_stats">
+                <span class="icon-heart-empty s_text feed_like">18,231</span>
+                <span class="icon-comment-empty s_text feed_comment">256</span>
+            </div>
+            <div class="feed_comments">
+                <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+            </div>
+        </div>
+    </div>
+    <div id="profile" class="appmodule">
+        <div id="portada" style="background-image:url(img/pacha_e.jpg);"></div>
+        <div id="pp_stats">
+            <div id="influence" class="s_stat">
+                9.5<br/><span class="s_stat_text">influencia</span>
+            </div>
+            <div id="followers" class="s_stat" style="left:33%;">
+                15k<br/><span class="s_stat_text">seguidores</span>
+            </div>
+            <div id="followed" class="s_stat" style="left:66%;">
+                250<br/><span class="s_stat_text">seguidos</span>
+            </div>
+        </div>
+        <img id="p_picture" src="img/nico.jpg" align="bottom"/>
+        <span id="pp_username">nicolasbenenzon <span class="icon-ok-circled-2" style="font-size:74%; color:#199EFF;"></span></span>
+        <span class="u_stats icon-location-6 location_link tap_text" id="p_location"> Costanera, Buenos Aires</span>
+        <!--<span class="u_stats icon-eye-1" id="p_views"> 92k vistas</span>-->
+        <span class="u_stats icon-emo-happy" id="p_interests"> Electrónica, Rock, Gastronomía, Tech, Fiestas, Eco</span>
+        <div id="my_profile">
+            <span id="btn_follow_profile" class="icon-user-add-1 btn_follow"></span>
+            <span id="btn_chat_profile" class="icon-chat btn_chatu"></span>
+        </div>
+        <div id="o_profile">
+            <span id="btn_edit_profile" class="btn_edit">Editar</span>
+        </div>
+        <div id="p_description">Co-founder of Goer</div>
+        <div class="f_post_it">
+            <div class="textPostIt">¿Qué está pasando?</div>
+            <div class="post_actions">
+                <span class="btn_post_photo icon-camera-outline"></span>
+                <span class="btn_post icon-comment-empty"></span>
+            </div>
+            <!--<span id="btn_post_photo" class="icon-camera-outline"></span> old version
+            <input type="text" id="txt_post" placeholder="¡Publicá algo acá que lo ven todos!" />
+            <span id="btn_post" class="icon-paper-plane-empty"></span>-->
+        </div>
+        <div id="profile_content">
+            <div class="feed_post">
+                <div class="feed_user">
+                    <img class="feed_userimg" src="img/nico.jpg" />
+                    <div class="feed_usertext">
+                        <span class="feed_username">Nicolas Benenzon</span>
+                        <span class="feed_time">4 h</span>
+                        <div class="feed_details">asistirá a</div>
+                    </div>
+                </div>
+                <div class="p_content" style="background-image:url(img/jet_e.jpg);">
+                    <div class="btn_p_like icon-heart-empty"></div>
+                    <div class="p_info">
+                        <span class="p_text eventTitle">This Thursday We Are Lucky</span>
+                        <br/>
+                        <span class="icon-calendar p_text"> jueves, 14 julio 22:00 a 4:00</span>
+                        <br/>
+                        <span class="icon-location-6 location_link p_text">Av. Rafael Obligado Costanera 4801</span>
+                    </div>
+                </div>
+                <div class="feed_stats">
+                    <span class="icon-heart-empty s_text feed_like">18,231</span>
+                    <span class="icon-comment-empty s_text feed_comment">256</span>
+                </div>
+                <div class="feed_comments">
+                    <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                    <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+                </div>
+            </div>
+            <div class="feed_post">
+                <div class="feed_user">
+                    <img class="feed_userimg" src="img/nico.jpg" />
+                    <div class="feed_usertext">
+                        <span class="feed_username">Nicolas Benenzon</span>
+                        <span class="feed_time">30 seg</span>
+                        <div class="feed_details">en <span class="event_link tap_text">Tonight we are very lucky</span> by <span class="profile_link tap_text">Jet BA</span></div>
+                    </div>
+                </div>
+                <div class="feed_photo"></div>
+                <div class="feed_text">¿Quién está para tomar unas birras?</div>
+                <div class="feed_stats">
+                    <span class="icon-heart-empty s_text feed_like">18,231</span>
+                    <span class="icon-comment-empty s_text feed_comment">256</span>
+                </div>
+                <div class="feed_comments">
+                    <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                    <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+                </div>
+            </div>
+            <div class="feed_post">
+                <div class="feed_user">
+                    <img class="feed_userimg" src="img/nico.jpg" />
+                    <div class="feed_usertext">
+                        <span class="feed_username">Nicolas Benenzon</span>
+                        <span class="feed_time">41 min</span>
+                        <div class="feed_details">en <span class="event_link tap_text">Refugio Patagonia</span> by <span class="profile_link tap_text">Cerveza Patagonia</span></div>
+                    </div>
+                </div>
+                <div class="feed_photo" style="display:block;"></div>
+                <div class="feed_text" style="display:none;">Who want to go and grab an ice cold beer?</div>
+                <div class="feed_stats">
+                    <span class="icon-heart-empty s_text feed_like">18,231</span>
+                    <span class="icon-comment-empty s_text feed_comment">256</span>
+                </div>
+                <div class="feed_comments">
+                    <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                    <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+                </div>
+            </div>
+            <div class="feed_post">
+                <div class="feed_user">
+                    <img class="feed_userimg" src="img/nico.jpg" />
+                    <div class="feed_usertext">
+                        <span class="feed_username">Nicolas Benenzon</span>
+                        <span class="feed_time">1 d</span>
+                        <div class="feed_details">le interesa</div>
+                    </div>
+                </div>
+                <div class="p_content" style="background-image:url(img/jet_e.jpg);">
+                    <div class="btn_p_like icon-heart-empty"></div>
+                    <div class="p_info">
+                        <span class="p_text eventTitle">This Thursday We Are Lucky</span>
+                        <br/>
+                        <span class="icon-calendar p_text"> jueves, 14 julio 22:00 a 4:00</span>
+                        <br/>
+                        <span class="icon-location-6 location_link p_text">Av. Rafael Obligado Costanera 4801</span>
+                    </div>
+                </div>
+                <div class="feed_stats">
+                    <span class="icon-heart-empty s_text feed_like">18,231</span>
+                    <span class="icon-comment-empty s_text feed_comment">256</span>
+                </div>
+                <div class="feed_comments">
+                    <span class="profile_link tap_text">nicolasbenenzon </span><span class="c_text">#ArrancandoElFinde</span><br/>
+                    <span class="profile_link tap_text">borjamartel </span><span class="c_text">Los veo en la barra para pedir algo</span>
+                </div>
+            </div>
+        </div>
+        <!--<span id="btn_p_events" class="btn_sec_navup btn_p_navup">EVENTOS</span> OLD VERSION OF PROFILE
+        <span id="btn_p_feed" class="btn_sec_navup btn_p_navup">ACTIVIDAD</span>
+        <div id="p_events">
+            <div id="e_stats"> para dsp
+                <div class="e_stat">
+                    <span id="e_assisted">200<br/><span class="e_stat_text">asistidos</span></span>
+                </div>
+                <div class="e_stat">
+                    <span id="e_liked">158<br/><span class="e_stat_text">le interesan</span></span>
+                </div>
+            </div> para dsp
+        </div>
+        <div id="p_feed" style="display:none;">
+            <div class="nonetoshow">
+                <br/><br/><br/>
+                <span style="font-size:250%;" class="icon-emo-displeased"></span>
+                <br/><br/>
+                Todavía no hay actividad para mostrar
+            </div>
+        </div>-->
+    </div>
+    <div id="search">
+        <div id="s_close" class="icon-left-open-3"></div>
+        <input id="txt_search" placeholder="Buscar"/>
+        <div id="s_search" class="icon-search-7"></div>
+        <div id="search_results">
+            <span id="search_main">
+                <span class="icon-search-7"></span>
+                <br/><br/>
+                <span id="search_text">Buscá usuarios y empresas.</span>
+            </span>
+            <div class="s_users"></div>
+            <div class="s_events"></div>
+            <div class="s_hashtags"></div>
+        </div>
+    </div>
+    <div id="nav_down">
+        <div id="btn_search" class="btn_navdown">
+            <span class="icon-search navdown_icon"></span>
+        </div>
+        <div id="btn_feed" class="btn_navdown">
+            <span class="icon-home-1 navdown_icon"></span>
+        </div>
+        <div id="btn_profile" class="btn_navdown">
+            <span class="icon-user-2 navdown_icon"></span>
+        </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
 </body>
