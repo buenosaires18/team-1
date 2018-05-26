@@ -26,19 +26,7 @@
         "                    <p>Reportes</p>\n" +
         "                </a>\n" +
         "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./userabm.html\">\n" +
-        "                    <i class=\"now-ui-icons users_single-02\"></i>\n" +
-        "                    <p>Alumnos</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li>\n" +
-        "                <a href=\"./icons.html\">\n" +
-        "                    <i class=\"now-ui-icons education_atom\"></i>\n" +
-        "                    <p>Icons</p>\n" +
-        "                </a>\n" +
-        "            </li>\n" +
-        "            <li class='map-li'>\n" +
+            "            <li class='map-li'>\n" +
         "                <a href=\"./map.html\">\n" +
         "                    <i class=\"now-ui-icons location_map-big\"></i>\n" +
         "                    <p>Mapa</p>\n" +

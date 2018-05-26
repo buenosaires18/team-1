@@ -95,7 +95,7 @@
                 <h4 class="card-title">Éxitos</h4>
               </div>
               <div class="card-body">
-                <div class="alert alert-success alert-with-icon" data-notify="container">
+                <div  data-toggle="modal" data-target="#exampleModal" class="alert alert-success alert-with-icon" data-notify="container">
                   <button type="button" aria-hidden="true" class="close">
                       <i class="now-ui-icons ui-1_simple-remove"></i>
                     </button>
@@ -112,14 +112,14 @@
                 <h4 class="card-title">Alertas</h4>
               </div>
               <div class="card-body alerts-div">
-                <div class="alert alert-primary alert-with-icon" data-notify="container">
-                  <button type="button" aria-hidden="true" class="close">
+                <div data-toggle="modal" data-target="#exampleModal" class="alert alert-primary alert-with-icon" data-notify="container">
+                  <button type="button" aria-hidden="true"  class="close">
                     <i class="now-ui-icons ui-1_simple-remove"></i>
                   </button>
-                  <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
+                  <span data-notify="icon"  class="now-ui-icons ui-1_bell-53"></span>
                   <span data-notify="message"> <b> Lautaro Martinez - </b> rechazó tres oportunidades y sigue sin trabajo.</span>
                 </div>
-                <div class="alert alert-primary alert-with-icon" data-notify="container">
+                <div data-toggle="modal" data-target="#exampleModal" class="alert alert-primary alert-with-icon" data-notify="container">
                   <button type="button" aria-hidden="true" class="close">
                     <i class="now-ui-icons ui-1_simple-remove"></i>
                   </button>
@@ -194,6 +194,31 @@
       </footer>
     </div>
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comunicarse</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Mensaje</label>
+              <textarea class="form-control modal-message" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="sendWhapp()">Enviar Whatsapp</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -210,10 +235,15 @@
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
   <script src="../assets/js/sidebar.js"></script>
-<script>
+  <!--https://api.whatsapp.com/send?phone=1156225536&text=Hola-->
+
+  <script>
+    function sendWhapp(){
+        window.open ("https://api.whatsapp.com/send?phone=541130253231&text="+ $('.modal-message').val());
+    }
   setActive('notifications');
   setTimeout(function(){
-      $('.alerts-div').append("                <div class=\"alert alert-primary alert-with-icon\" data-notify=\"container\">\n" +
+      $('.alerts-div').append("                <div data-toggle=\"modal\" data-target=\"#exampleModal\" class=\"alert alert-primary alert-with-icon\" data-notify=\"container\">\n" +
           "                  <button type=\"button\" aria-hidden=\"true\" class=\"close\">\n" +
           "                    <i class=\"now-ui-icons ui-1_simple-remove\"></i>\n" +
           "                  </button>\n" +
@@ -221,6 +251,25 @@
           "                  <span data-notify=\"message\"> <b> Jorge Rodriguez - </b> recibió puntaje bajo en su pasantia.</span>\n" +
           "                </div>\n");
   }, 2000);
+  setTimeout(function(){
+      $('.alerts-div').append("                <div  data-toggle=\"modal\" data-target=\"#exampleModal\" class=\"alert alert-primary alert-with-icon\" data-notify=\"container\">\n" +
+          "                  <button type=\"button\" aria-hidden=\"true\" class=\"close\">\n" +
+          "                    <i class=\"now-ui-icons ui-1_simple-remove\"></i>\n" +
+          "                  </button>\n" +
+          "                  <span data-notify=\"icon\" class=\"now-ui-icons ui-1_bell-53\"></span>\n" +
+          "                  <span data-notify=\"message\"> <b> Luis Rodriguez - </b> recibió puntaje bajo en su pasantia.</span>\n" +
+          "                </div>\n");
+  }, 1000);
+    setTimeout(function(){
+        $('.alerts-div').append("                <div data-toggle=\"modal\" data-target=\"#exampleModal\" class=\"alert alert-primary alert-with-icon\" data-notify=\"container\">\n" +
+            "                  <button type=\"button\" aria-hidden=\"true\" class=\"close\">\n" +
+            "                    <i class=\"now-ui-icons ui-1_simple-remove\"></i>\n" +
+            "                  </button>\n" +
+            "                  <span data-notify=\"icon\" class=\"now-ui-icons ui-1_bell-53\"></span>\n" +
+            "                  <span data-notify=\"message\"> <b> Jose Gomez - </b> recibió puntaje bajo en su pasantia.</span>\n" +
+            "                </div>\n");
+    }, 1000);
+
 
 </script>
 </body>
