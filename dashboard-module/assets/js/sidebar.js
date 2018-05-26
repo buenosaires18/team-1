@@ -47,11 +47,3 @@
         "        </ul>\n" +
         "    </div>\n" +
         "</div>\n");
-
-var json = {
-    "juan": "hola",
-    "hola":"chau"
-};
-localStorage.setItem("miuser", json);
-
-alert(JSON.stringify(localStorage.getItem("miuser")));
