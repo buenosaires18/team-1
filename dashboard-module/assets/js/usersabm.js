@@ -24,6 +24,8 @@ $(document).ready(function(){
      ",\"trabaja\":\""+$("#exampleInputWorking").val()+"\"}]";
     localStorage.setItem("user",aux);
     $('#exampleModal').modal('toggle');
+      location.reload(); 
+
 
 	});
   if (localStorage.getItem("user") === null) {
