@@ -84,9 +84,9 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
         datasets: [{
-          label: "Active Users",
+          label: "Crecimiento de comunidad",
           borderColor: "#f96332",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#f96332",
@@ -97,7 +97,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [30, 50, 150, 200, 350, 400, 416, 500, 560, 700, 880, 1000]
         }]
       },
       options: gradientChartOptionsConfiguration
@@ -222,9 +222,9 @@ demo = {
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["Jun","Jul","Ago","Sep","Oct","Nov","Dic","Ene","Feb","Mar","Abr","May"],
         datasets: [{
-          label: "Data",
+          label: "Puntos",
           borderColor: chartColor,
           pointBorderColor: chartColor,
           pointBackgroundColor: "#1e3d60",
@@ -237,7 +237,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+            data: [30, 50, 100, 130, 170, 250, 300, 500, 560, 700, 880, 1460]
         }]
       },
       options: {
@@ -316,9 +316,9 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Jun","Jul","Ago","Sep","Oct","Nov","Dic","Ene","Feb","Mar","Abr","May"],
         datasets: [{
-          label: "Active Users",
+          label: "Porcentaje",
           borderColor: "#f96332",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#f96332",
@@ -329,7 +329,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [75, 78, 82, 79, 81, 83, 84, 85, 86, 86, 87, 88 ]
         }]
       },
       options: gradientChartOptionsConfiguration
@@ -347,12 +347,11 @@ demo = {
     gradientFill.addColorStop(1, hexToRGB('#18ce0f', 0.4));
 
     myChart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       responsive: true,
       data: {
-        labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
+        labels: ["Volvo", "Toyota", "JP Morgan 1", "JP Morgan 2", "JP Morgan 3"],
         datasets: [{
-          label: "Email Stats",
           borderColor: "#18ce0f",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#18ce0f",
@@ -363,7 +362,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+          data: [67, 87, 92, 89, 105]
         }]
       },
       options: gradientChartOptionsConfigurationWithNumbersAndGrid
@@ -376,11 +375,11 @@ demo = {
     gradientFill.addColorStop(1, hexToRGB('#2CA8FF', 0.6));
 
     var a = {
-      type: "bar",
+      type: "line",
       data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        labels: [2013, 2014, 2015, 2016, 2017, 2018],
         datasets: [{
-          label: "Active Countries",
+          label: "",
           backgroundColor: gradientFill,
           borderColor: "#2CA8FF",
           pointBorderColor: "#FFF",
@@ -391,7 +390,7 @@ demo = {
           pointRadius: 4,
           fill: true,
           borderWidth: 1,
-          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155]
+          data: [80, 90, 80, 100, 150, 200]
         }]
       },
       options: {
@@ -446,138 +445,51 @@ demo = {
   },
 
   initGoogleMaps: function() {
-    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
-    var mapOptions = {
-      zoom: 13,
-      center: myLatlng,
-      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
-      styles: [{
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#e9e9e9"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f5f5f5"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 29
-        }, {
-          "weight": 0.2
-        }]
-      }, {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 18
-        }]
-      }, {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f5f5f5"
-        }, {
-          "lightness": 21
-        }]
-      }, {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#dedede"
-        }, {
-          "lightness": 21
-        }]
-      }, {
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-          "visibility": "on"
-        }, {
-          "color": "#ffffff"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "saturation": 36
-        }, {
-          "color": "#333333"
-        }, {
-          "lightness": 40
-        }]
-      }, {
-        "elementType": "labels.icon",
-        "stylers": [{
-          "visibility": "off"
-        }]
-      }, {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f2f2f2"
-        }, {
-          "lightness": 19
-        }]
-      }, {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [{
-          "color": "#fefefe"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-          "color": "#fefefe"
-        }, {
-          "lightness": 17
-        }, {
-          "weight": 1.2
-        }]
-      }]
-    };
+      var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: -34.603722, lng: -58.381592}
+      //    -34.603722, -58.381592. Argentina
+      });
+      var locations = [
+          ['Samsung Salta',  -24.815955,  -65.461920,1],
+          ['Volvo Salta', -24.771685,  -65.342882,2],
+          ['Techint Tucuman', -27.385028,  -65.295524,3],
+          ['Loreal Tucuman', -27.766817,  -65.566293,4],
+          ['Samsung Cordoba', -31.452727,  -64.065535,5],
+          ['J.P. Morgan Cordoba', -31.423379,  -62.122555,6],
+          ['Fiat Santa Fe', -30.167070,  -64.026557,7],
+          ['Oracle Santa Fe', -32.848195,  -60.908727,8],
+          ['Mercad Libre Capita', -31.572862,  -60.817128,9],
+          ['J.P. Morgan Capita', -37.309684,  -59.829270,10],
+          ['IBM Buenos Aire', -34.620169,  -58.483167,11],
+          ['Despegar Buenos Aires', -34.752650,  -58.204840,12],
+          ['J.P. Morgan Buenos Aires', -37.955050,  -57.639193,13],
+          ['IBM Mendoza', -34.697454,  -68.538630,14],
+          ['Huawei Tierra Del Fuego', -54.250477, -67.833195,15]
+      ];
 
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      var infowindow = new google.maps.InfoWindow();
 
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      title: "Hello World!"
-    });
+      var marker, i;
 
-    // To add the marker to the map, call setMap();
-    marker.setMap(map);
+      for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+              position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+              map: map
+          });
+
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+              return function() {
+                  infowindow.setContent(locations[i][0]);
+                  infowindow.open(map, marker);
+              }
+          })(marker, i));
+      }
+      // Add a marker clusterer to manage the markers.
+      // var markerCluster = new MarkerClusterer(map, markers,
+      //     {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+
   },
 
   showNotification: function(from, align) {
