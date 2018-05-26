@@ -1,0 +1,118 @@
+/* 
+
+================= GLOBAL ================= 
+
+*/
+
+*{
+	outline:none;
+	-webkit-touch-callout:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-user-select:none;
+  	-webkit-overflow-scrolling:touch;
+	-webkit-box-sizing:border-box;
+	-webkit-text-size-adjust:none;
+}
+
+body{
+	overflow:hidden;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+input {
+    -webkit-user-select: auto !important;
+}
+
+.appmodule{
+	position:absolute;
+	top:8%;
+	/*bottom:9.3%;*/
+	bottom:0%;
+	left:0;
+	width:100%;
+	opacity:0;
+}
+
+/* 
+
+================= SLASHER ================= 
+
+*/
+
+#join{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:black;
+	overflow:hidden;
+	z-index:9999;	
+}
+
+#logo{
+	margin-top:5%;	
+}
+
+#bg_slasher_video{ 
+    position:fixed;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+#btnLogin{
+	position:absolute;
+	top:45%;
+	text-align:center;
+	background-color:#F96332;
+	width:90%;
+	left:5%;
+    border-radius:5px;
+	color:white;
+	font-size:1.2em;
+	padding:5% 0;
+}
+
+#btnLogin:active{
+	background-color:#F96342;
+}
+
+#terms{
+    position:absolute;
+    text-align:center;
+    bottom:0%;
+    width:90%;
+    left:5%;
+	color:white;
+	text-shadow:1px 1px 2px black;
+	font-size:80%;
+}
+
+#joinForm{
+	position:absolute;
+	top:30%;
+	width:100%;
+	text-align:center;
+}
+
+#txt_email, #txt_password{
+	width:90%;
+	padding:3% 5%;
+	margin-bottom:2%;
+	background-color:white;
+	color:black;
+	font-size:100%;
+	border:none;
+	border-radius:8px;
+	opacity:0.7;
+}
+
+#txt_password{
+	padding-right:30%;	
+}
