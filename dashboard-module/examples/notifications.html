@@ -95,7 +95,7 @@
                 <h4 class="card-title">Éxitos</h4>
               </div>
               <div class="card-body">
-                <div  data-toggle="modal" data-target="#exampleModal" class="alert alert-success alert-with-icon" data-notify="container">
+                <div  data-toggle="modal" data-target="#exampleModal2" class="alert alert-success alert-with-icon" data-notify="container">
                   <button type="button" aria-hidden="true" class="close">
                       <i class="now-ui-icons ui-1_simple-remove"></i>
                     </button>
@@ -119,7 +119,7 @@
                   <span data-notify="icon"  class="now-ui-icons ui-1_bell-53"></span>
                   <span data-notify="message"> <b> Lautaro Martinez - </b> rechazó tres oportunidades y sigue sin trabajo.</span>
                 </div>
-                <div data-toggle="modal" data-target="#exampleModal" class="alert alert-primary alert-with-icon" data-notify="container">
+                <div data-toggle="modal" data-target="#exampleModal1" class="alert alert-primary alert-with-icon" data-notify="container">
                   <button type="button" aria-hidden="true" class="close">
                     <i class="now-ui-icons ui-1_simple-remove"></i>
                   </button>
@@ -194,8 +194,65 @@
       </footer>
     </div>
   </div>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comunicarse</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Mensaje</label>
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Mensaje</label>
+              <textarea class="form-control modal-message" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="sendWhapp()">Enviar Whatsapp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comunicarse</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Mandar felicitacion</label>
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Mensaje</label>
+              <textarea class="form-control modal-message" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="sendWhapp()">Enviar Whatsapp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
