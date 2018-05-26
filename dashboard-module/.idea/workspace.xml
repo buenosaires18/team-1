@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/examples/userabm.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
-              <caret line="550" column="10" lean-forward="true" selection-start-line="550" selection-start-column="10" selection-end-line="550" selection-end-column="10" />
+              <caret line="557" column="10" lean-forward="true" selection-start-line="557" selection-start-column="10" selection-end-line="557" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -38,13 +38,15 @@
       <file leaf-file-name="notifications.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/notifications.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="263" column="105" selection-start-line="263" selection-start-column="105" selection-end-line="263" selection-end-column="105" />
-              <folding>
-                <element signature="e#9765#9772#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="209" column="280" selection-start-line="209" selection-start-column="280" selection-end-line="209" selection-end-column="280" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/user.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
@@ -65,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sidebar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/sidebar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+            <state relative-caret-position="398">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -88,9 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="186">
               <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-              <folding>
-                <element signature="e#9014#9021#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bigdash</find>
       <find>dashboard</find>
       <find>shipped</find>
       <find>&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;</find>
@@ -132,17 +130,18 @@
       <find>button class=&quot;</find>
       <find>modal-messa</find>
       <find>modal-message</find>
-      <find>modal</find>
       <find>data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot;</find>
       <find>contenido</find>
       <find>alumn</find>
       <find>conteni</find>
+      <find>modal</find>
+      <find>comuni</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;Jun&quot;,&quot;Jul&quot;,&quot;Ago&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dic&quot;,&quot;Ene&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Abr&quot;,&quot;May&quot;</replace>
       <replace>Actualizado</replace>
-      <replace>button data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; class=&quot;btn btn-primary</replace>
       <replace>href=&quot;/resume.pdf&quot;</replace>
+      <replace>button data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; class=&quot;btn btn-primary</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -154,11 +153,11 @@
         <option value="$PROJECT_DIR$/assets/demo/demo.js" />
         <option value="$PROJECT_DIR$/examples/map.html" />
         <option value="$PROJECT_DIR$/examples/userabm.html" />
-        <option value="$PROJECT_DIR$/examples/notifications.html" />
         <option value="$PROJECT_DIR$/examples/reports.html" />
         <option value="$PROJECT_DIR$/examples/sidebar.html" />
-        <option value="$PROJECT_DIR$/assets/js/sidebar.js" />
         <option value="$PROJECT_DIR$/examples/dashboard.html" />
+        <option value="$PROJECT_DIR$/examples/notifications.html" />
+        <option value="$PROJECT_DIR$/assets/js/sidebar.js" />
       </list>
     </option>
   </component>
@@ -320,15 +319,16 @@
       <option name="presentableId" value="Default" />
       <updated>1527290582059</updated>
       <workItem from="1527290589658" duration="17344000" />
-      <workItem from="1527313429233" duration="5840000" />
+      <workItem from="1527313429233" duration="7515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24206000" />
+    <option name="totallyTimeSpent" value="25881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
@@ -371,9 +371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3281">
           <caret line="193" column="15" selection-start-line="193" selection-start-column="15" selection-end-line="193" selection-end-column="15" />
-          <folding>
-            <element signature="e#9765#9772#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -409,9 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5695">
           <caret line="335" column="13" selection-start-line="335" selection-start-column="13" selection-end-line="335" selection-end-column="13" />
-          <folding>
-            <element signature="e#9014#9021#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,17 +505,7 @@
     <entry file="file://$PROJECT_DIR$/examples/userabm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="550" column="10" lean-forward="true" selection-start-line="550" selection-start-column="10" selection-end-line="550" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="263" column="105" selection-start-line="263" selection-start-column="105" selection-end-line="263" selection-end-column="105" />
-          <folding>
-            <element signature="e#9765#9772#1" expanded="true" />
-          </folding>
+          <caret line="557" column="10" lean-forward="true" selection-start-line="557" selection-start-column="10" selection-end-line="557" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -529,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding>
-            <element signature="e#9014#9021#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -556,6 +530,23 @@
           <folding>
             <element signature="e#9291#9297#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/user.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="209" column="280" selection-start-line="209" selection-start-column="280" selection-end-line="209" selection-end-column="280" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>

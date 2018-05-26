@@ -26,6 +26,12 @@ $(document).ready(function(){
                                 "<td>\n"+
                                   $("#exampleInputProvincia").val() +
                                 "</td>\n" +
+                                "<td>\n"+
+                                  $("#exampleInputMail").val() +
+                                "</td>\n" +
+                                "<td>\n"+
+                                  $("#exampleInputWorking").val() +
+                                "</td>\n" +
                                 "<td class=\"text-right\">\n" +
                                   "<button class=\"btn btn-primary btn-round\" onclick=\"myLittleFunc(this)\">Eliminar</button>\n"+
                                 "</td>\n" +
