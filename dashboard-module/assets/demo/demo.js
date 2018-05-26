@@ -459,36 +459,47 @@ demo = {
       //    -34.603722, -58.381592. Argentina
       });
       var locations = [
-          ['Samsung Salta',  -24.815955,  -65.461920,1],
-          ['Volvo Salta', -24.771685,  -65.342882,2],
-          ['Techint Tucuman', -27.385028,  -65.295524,3],
-          ['Loreal Tucuman', -27.766817,  -65.566293,4],
-          ['Samsung Cordoba', -31.452727,  -64.065535,5],
-          ['J.P. Morgan Cordoba', -31.423379,  -62.122555,6],
-          ['Fiat Santa Fe', -30.167070,  -64.026557,7],
-          ['Oracle Santa Fe', -32.848195,  -60.908727,8],
-          ['Mercad Libre Capita', -31.572862,  -60.817128,9],
-          ['J.P. Morgan Capita', -37.309684,  -59.829270,10],
-          ['IBM Buenos Aire', -34.620169,  -58.483167,11],
-          ['Despegar Buenos Aires', -34.752650,  -58.204840,12],
-          ['J.P. Morgan Buenos Aires', -37.955050,  -57.639193,13],
-          ['IBM Mendoza', -34.697454,  -68.538630,14],
-          ['Huawei Tierra Del Fuego', -54.250477, -67.833195,15]
+          ['Samsung Salta',  -24.815955,  -65.461920,1, 40],
+          ['Volvo Salta', -24.771685,  -65.342882,2, 50],
+          ['Techint Tucuman', -27.385028,  -65.295524,3, 60],
+          ['Loreal Tucuman', -27.766817,  -65.566293,4, 70],
+          ['Samsung Cordoba', -31.452727,  -64.065535,5, 60],
+          ['J.P. Morgan Cordoba', -31.423379,  -62.122555,6, 50],
+          ['Fiat Santa Fe', -30.167070,  -64.026557,7, 100],
+          ['Oracle Santa Fe', -32.848195,  -60.908727,8, 100],
+          ['Mercad Libre Capita', -31.572862,  -60.817128,9, 67],
+          ['J.P. Morgan Capita', -37.309684,  -59.829270,10, 76],
+          ['IBM Buenos Aire', -34.620169,  -58.483167,11, 65],
+          ['Despegar Buenos Aires', -34.752650,  -58.204840,12, 13],
+          ['J.P. Morgan Buenos Aires', -37.955050,  -57.639193,13, 46],
+          ['IBM Mendoza', -34.697454,  -68.538630,14, 12],
+          ['Huawei Tierra Del Fuego', -54.250477, -67.833195,15, 54]
       ];
 
-      var infowindow = new google.maps.InfoWindow();
+      var infowindow = new google.maps.InfoWindow({
+          content: "<div id='infoWindow'>" +
+          "<span>"+location[0]+"</span>" +
+          "<b>Participantes: "+ location[4]+"</b>" +
+          "" +
+          "</div>"
+      });
 
       var marker, i;
 
       for (i = 0; i < locations.length; i++) {
           marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-              map: map
+              map: map,
+              icon: 'https://maps.google.com/mapfiles/kml/shapes/library_maps.png'
           });
 
           google.maps.event.addListener(marker, 'click', (function(marker, i) {
               return function() {
-                  infowindow.setContent(locations[i][0]);
+                  var content = "<div id='infoWindow'>" +
+                      "<span>"+locations[i][0]+"</span><br>" +
+                      "<b>Participantes: "+ locations[i][4]+"</b>" +
+                      "</div>";
+                  var infowindow = new google.maps.InfoWindow({content});
                   infowindow.open(map, marker);
               }
           })(marker, i));

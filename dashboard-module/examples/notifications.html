@@ -111,7 +111,7 @@
               <div class="card-header">
                 <h4 class="card-title">Alertas</h4>
               </div>
-              <div class="card-body">
+              <div class="card-body alerts-div">
                 <div class="alert alert-primary alert-with-icon" data-notify="container">
                   <button type="button" aria-hidden="true" class="close">
                     <i class="now-ui-icons ui-1_simple-remove"></i>
@@ -231,6 +231,16 @@
   <script src="../assets/js/sidebar.js"></script>
 <script>
   setActive('notifications');
+  setTimeout(function(){
+      $('.alerts-div').append("                <div class=\"alert alert-primary alert-with-icon\" data-notify=\"container\">\n" +
+          "                  <button type=\"button\" aria-hidden=\"true\" class=\"close\">\n" +
+          "                    <i class=\"now-ui-icons ui-1_simple-remove\"></i>\n" +
+          "                  </button>\n" +
+          "                  <span data-notify=\"icon\" class=\"now-ui-icons ui-1_bell-53\"></span>\n" +
+          "                  <span data-notify=\"message\"> <b> Jorge Rodriguez - </b> recibió puntaje bajo en su pasantia.</span>\n" +
+          "                </div>\n");
+  }, 2000);
+
 </script>
 </body>
 
