@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	/*$('#year2018').click(function(){
+	$('#year2018').click(function(){
 		if($('#2018').css('display') == 'none')
      $('#2018').slideDown(250);
 		else $('#2018').slideUp(250);
@@ -14,7 +14,7 @@ $(document).ready(function(){
 		if($('#2016').css('display') == 'none')
      $('#2016').slideDown(250);
 		else $('#2016').slideUp(250);
-	});*/
+	});
 	$('.btn btn-primary btn-round').click(function() {
 		alert('asdsd');
 	})
